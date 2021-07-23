@@ -1,0 +1,36 @@
+
+// FOOTER // 
+
+footer {
+    background-color: #262526;
+    margin: 0%;
+    position: relative;
+    iframe {
+        margin: 0%;
+        padding: 0px 0px 30px 0px;
+    }
+    hr {
+        color: white;
+    }
+    h6 {
+        color: wheat;
+        padding: 40px;
+        display: inline block;
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+    .footer__conteiner {
+        position: absolute;
+        top: 240px;
+        right: 30px;
+        width: 500px;
+        img {
+            display: inline-block;
+            padding: 25px;
+            
+           
+        }
+    
+    }
+   
+}

@@ -1,0 +1,73 @@
+.fondoMenu{
+    background-color: $negro;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.menuContainer{
+  
+    width: 80%;
+    height: 1000px;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1 fr, 1 fr;
+    grid-template-areas: "menuLunes menuMartes" 
+                         "menuMiercoles menuJueves";
+    
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("../imagenes/fondo-menuejecutivo.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+       .menuContainer__divs {
+           display: flex;
+           justify-content: center;
+           align-self: center;
+           flex-direction: column;
+           position: relative;
+           
+       }
+       h3 {
+           color: $grisaseo;
+           font-family: $titulos;
+           font-weight: bold;
+           align-self: center;
+           border-bottom: 1px solid $grisaseo;
+           width: 300px;
+           padding-left: 110px;
+           text-transform: uppercase;
+
+       }
+       .menuJueves h3{
+           padding-top: 35px;
+       }
+       figure {
+           align-self: center;
+           img{
+               border-radius: 5px;
+           }
+           figcaption {
+               padding-left: 100px;
+               background-color: $negro;
+               color: $grisaseo;
+               font-family: $texto;
+               text-transform: uppercase;
+           }
+           
+       }
+       p{
+           align-self: center;
+           color: $grisaseo;
+           width: 350px;
+           font-family: $subtitulos;
+           font-size: 25px;
+       }
+    
+    
+}
