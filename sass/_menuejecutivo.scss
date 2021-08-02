@@ -31,43 +31,89 @@
            align-self: center;
            flex-direction: column;
            position: relative;
-           
-       }
-       h3 {
-           color: $grisaseo;
-           font-family: $titulos;
-           font-weight: bold;
-           align-self: center;
-           border-bottom: 1px solid $grisaseo;
-           width: 300px;
-           padding-left: 110px;
-           text-transform: uppercase;
+           padding-left: 100px;
+           h3 {
+            color: $grisaseo;
+            font-family: $titulos;
+            font-weight: bold;
+            align-self: center;
+            border-bottom: 1px solid $grisaseo;
+            width: 300px;
+            padding-left: 110px;
+            text-transform: uppercase;
+ 
+           }
+        .menuJueves h3{
+            padding-top: 35px;
+        }
+        figure {
+            align-self: center;
+            img{
+                border-radius: 5px;
+            }
+            figcaption {
+                padding-left: 100px;
+                background-color: $negro;
+                color: $grisaseo;
+                font-family: $texto;
+                text-transform: uppercase;
+                width: 250px;
+            }
+            
+        }
+        p{
+            align-self: center;
+            color: $grisaseo;
+            width: 350px;
+            font-family: $subtitulos;
+            font-size: 25px;
+        }
+         
+    } 
+    
+}
 
-       }
-       .menuJueves h3{
-           padding-top: 35px;
-       }
-       figure {
-           align-self: center;
-           img{
-               border-radius: 5px;
-           }
-           figcaption {
-               padding-left: 100px;
-               background-color: $negro;
-               color: $grisaseo;
-               font-family: $texto;
-               text-transform: uppercase;
-           }
-           
-       }
-       p{
-           align-self: center;
-           color: $grisaseo;
-           width: 350px;
-           font-family: $subtitulos;
-           font-size: 25px;
-       }
-    
-    
+//MEDIA QUERIES//
+@media screen and (max-width: 768px){
+     .fondoMenu{
+         .menuContainer{
+             display: grid;
+             grid-template-areas: "menuLunes"
+                                  "menuMartes"
+                                  "menuMiercoles"
+                                  "menuJueves";
+             height: 1100px;
+             .menuContainer__divs {
+                 display: flex;
+                 flex-direction: column;
+                 .diaSemana {
+                     margin: auto;
+                     margin-bottom: 25px;
+                 }
+                 .img-p {
+                     display: flex;
+                     display: row;
+                     justify-content: space-around;
+                     figure {
+                        img {
+                            height: 150px;
+                            width: 150px;
+                        }
+                        figcaption {
+                            width: auto;
+                            text-align: center;
+                        }
+                    }
+                    p {
+                       width: 150px;
+                       font-size: 20px;
+                       
+                    }
+                }
+               
+                 
+             }
+             
+         }
+     }
 }

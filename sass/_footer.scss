@@ -8,6 +8,7 @@ footer {
     iframe {
         margin: 0%;
         padding: 0px 0px 30px 0px;
+        width: 100%;
     }
     hr {
         color: white;
@@ -22,7 +23,7 @@ footer {
     .footer__conteiner {
         position: absolute;
         top: 240px;
-        right: 30px;
+        right: 10px;
         width: 500px;
         img {
             display: inline-block;
@@ -33,4 +34,15 @@ footer {
     
     }
    
+}
+
+
+//MEDIA QUERIES//
+@media screen and (max-width: 768px){ 
+    footer { 
+    .footer__conteiner {
+        right: 1px;
+        width: auto;
+    }
+  }
 }
