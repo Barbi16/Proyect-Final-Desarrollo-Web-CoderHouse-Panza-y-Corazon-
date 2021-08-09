@@ -12,8 +12,12 @@
     background-position: center;
     background-repeat: no-repeat;  
      .fondo__menu {
-        padding-left: 250px;
         width: 100%;
+        display: flex;
+        .logo {
+            flex-basis: 80%;
+            margin-left: 30px;
+        }
         .link {
             padding-left: 20px!important;
             padding-right: 20px!important;
@@ -27,8 +31,7 @@
         color: white;
         font-size: 80px;
         text-align: center;
-        padding: 30px;
-        margin-top: 270px;
+        padding-top: 300px;
         animation-duration: 4s;
         animation-name: titulo;
         animation-delay: 1s;
@@ -38,5 +41,23 @@
             50%{ opacity: 0.5; }
             100%{ opacity: 1; }
          }      
-    }     
+    }
+    .boton-reservar {
+        display: inline-block;
+        width: 220px;
+        border-radius: 15%;
+        padding: 18px;
+        margin: 20px;
+        font-weight: 100px;
+        font-family: $texto;
+        color: white;
+        background-color: $negro;
+       
+    } 
+    a {
+      align-self: center;
+    }
+
+    
+
 }

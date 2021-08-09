@@ -1,0 +1,18 @@
+.titulo-sucursales{
+    h5 {
+        background-color: rgba(134, 125, 125, 0.8); 
+        width: 300px;
+        font-family: $titulos;
+        margin-left: 320px;
+    }
+    .titulo-puertomadero {
+        width: 550px;
+        margin-left: 200px;
+    }
+    p {
+        background-color: rgba(134, 125, 125, 0.8);
+        width: 150px;
+        margin-left: 400px;
+        font-family: $texto;
+    }
+}
