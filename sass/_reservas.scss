@@ -1,0 +1,25 @@
+.contenedorReservas {
+    background-color: $negro;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .div-contenedorReservas {
+       border-radius: 2%;
+       background-color: $grisaseo !important;
+       width: 70vw;
+       padding-top: 20px;
+       .titulo-reservas{
+           margin-left: 400px;
+       }
+       .botones-reserva{
+           margin: 30px;
+           .botones-reserva1 {
+               background-color: $beige;
+           }
+           .botones-reserva2 {
+               background-color: $marronClaro;
+           }
+       }
+    }
+}

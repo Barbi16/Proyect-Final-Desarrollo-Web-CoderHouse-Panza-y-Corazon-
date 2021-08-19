@@ -11,6 +11,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
+     .fondo__redes {
+         display: none;
+     }
      .fondo__menu {
         width: 100%;
         display: flex;
@@ -43,21 +46,69 @@
          }      
     }
     .boton-reservar {
-        display: inline-block;
-        width: 220px;
-        border-radius: 15%;
-        padding: 18px;
-        margin: 20px;
-        font-weight: 100px;
-        font-family: $texto;
-        color: white;
-        background-color: $negro;
+       border-radius: 5%;
+      margin: 15px;
+      padding: 10px 15px;
+      width: 200px;
+      background-color: $negro;
+      color: $grisaseo;
+      border: solid 2px $grisaseo;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover{
+          color: $negro;
+          background-color: $grisaseo;
+          border-color: $grisaseo;
        
-    } 
+        } 
+    }
     a {
       align-self: center;
     }
-
-    
-
 }
+
+// MEDIA QUERIES //
+@media screen and (max-width: 768px){
+    .fondo {
+        .fondo__redes {
+            display: none;
+        }
+        .fondo__menu { 
+            .logo {
+                margin-left: 210px;
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .fondo {
+        h1 {
+            display: none;
+        }
+        a {
+            margin: auto auto;
+
+        }
+        .fondo__redes {
+             display: block;
+            a {
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: flex-end;
+            img{
+                margin: 20px;
+            }
+        }
+        }
+        .fondo__menu { 
+            .logo {
+                margin-left: 90px;
+        
+            }
+        }
+    }
+}
+    

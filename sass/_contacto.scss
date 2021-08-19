@@ -1,0 +1,201 @@
+main {
+    .contenedorContacto1 {
+        background-color: $negro;
+        width: 100vw;
+        height: 800px;
+        display: grid;
+        grid-template-areas: "bife-contacto texto-contacto vino-contacto"
+                            "cupcake-contacto canapes-contacto vino-contacto";
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, 1fr);                       
+        .bife-contacto {
+            background-image: url("../imagenes/contacto-bife.jpg");
+            background-position: bottom;
+            background-size: cover;  
+        }
+        .vino-contacto {
+            background-image: url("../imagenes/contacto-vino-m.jpg");
+            background-position: center;
+            background-size: cover;
+            grid-row-start: 1;
+            grid-column-start: 3;
+            grid-row-end: 3;
+            grid-column-end: 3; 
+        
+        }
+        .cupcake-contacto {
+            background-image: url("../imagenes/contacto-cupcakes.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .canapes-contacto {
+            background-image: url("../imagenes/contacto-canapes.jpg");
+            background-position: center;
+            background-size: cover; 
+        }
+        .texto-contacto {
+            background-color: $negro;
+            color: $grisaseo;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .p1-contacto {
+            margin: 20px;
+            font-family: $texto;
+            font-size: 20px;
+            word-spacing: 7px; 
+            }
+            .p2-contacto {
+                margin: 20px;
+                font-family: $texto;
+                font-size: 32px;
+                font-weight: bold;
+                letter-spacing: 3px;
+            }
+            a {
+                button {
+                    margin: 15px;
+                    padding: 10px 15px;
+                    width: 200px;
+                    background-color: $negro;
+                    color: $grisaseo;
+                    border: solid 4px $grisaseo;
+                    font-size: 20px;
+                    font-weight: bold;
+                    &:hover{
+                        color: $negro;
+                        background-color: $grisaseo;
+                        border-color: $grisaseo;
+                    }
+                }
+            }      
+        }
+    }
+    .contenedorContacto2 {
+        background-color: $marronOscuro;
+        width: auto;
+        height: 400px;
+        display: grid;
+        grid-template-areas: "imagen1-contacto texto1-contacto";
+        .imagen1-contacto {
+            background-image: url("../imagenes/contacto-restaurante1.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 400px;   
+        }
+        .texto1-contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            h3 {
+                margin-left: 30px;
+                padding: 20px 50px 10px 0px;
+                color: $negro;
+                font-family: $texto;
+                font-weight: bold;
+                border-bottom: 1px solid $negro;
+                font-size: 25px;
+                
+            }
+            p {
+                margin: 20px 200px 50px 30px;
+                font-family: $titulos;
+                font-size: 25px;
+                
+            }
+
+
+        }
+    }
+    .contenedorContacto3 {
+        background-color: $marronClaro;
+        width: auto;
+        height: 400px;
+        display: grid;
+        
+        .imagen2-contacto {
+            background-image: url("../imagenes/contacto-restaurante3.jpg");
+            background-position: center;
+            background-size: cover;
+            width: 400px;  
+            grid-column-start: 3; 
+            grid-row-end: 3;
+            grid-row-start: 1;
+        }
+        .texto2-contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            h3 {
+                margin-left: 50px;
+                padding: 20px 70px 10px 0px;
+                margin-bottom: 20px;
+                color: $negro;
+                font-family: $texto;
+                font-weight: bold;
+                border-bottom: 1px solid $negro;
+                font-size: 25px;
+               
+            }
+            p {
+                margin: 20px 30px 50px 200px;
+                font-family: $titulos;
+                font-size: 25px;
+
+                
+            } 
+         }
+
+    }
+    .contenedorFormulario {
+        background-color: $beige;
+        height: 650px;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr;
+        grid-area: "contenedorFormulario contenedorFormulario-texto";
+        .formulario {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 60px 0px black;
+            width: 500px;
+            padding: 30px;
+            margin-bottom: 30px;
+            height: 550px;
+            font-family: $texto;
+            legend {
+                h4 {
+                    margin-left: 60px;
+                    font-weight: bold;
+                }
+            }
+            label {
+                padding: 1px 10px;
+            }
+            .boton-formulario {
+                padding: 5px;
+                margin: 8px;
+            }
+        }
+        .contenedorFormulario-texto {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            h3 {
+                margin-top: 200px !important;
+            }
+            h3, h4 {
+                font-family: 'Fjalla One', sans-serif;
+                font-weight: bold;
+                margin: 30px;
+                font-size: 40px;
+                letter-spacing: 3px;
+
+            }
+        }
+    }
+   
+}

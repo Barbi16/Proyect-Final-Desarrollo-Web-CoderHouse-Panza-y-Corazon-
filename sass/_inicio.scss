@@ -90,7 +90,20 @@
         }
     }    
 }
-
+@media screen and (max-width: 480px){ 
+    .primeraSeccion {
+        height: 600px;
+        .primeraSeccion__contenedor {
+            height: 400px;
+                .container-img {
+                   img {
+                       display: none;
+                   } 
+                }
+          
+        }
+    }
+}
 
 // GALERIA INDEX // 
 
@@ -188,58 +201,90 @@
     background-color: wheat;
     width: 100%;
     height: 100px;
-    position:relative;
-    .segundaSeccion__imagen1 {
-        position: absolute;
-        left: 25%;
-        top: 20px;
-        border-right: solid black 1.5px;
-        padding-right: 25px;
-    }
-    .segundaSeccion__imagen2 {
-        position:absolute;
-        right: 35%;
-        top: 20px;
-        border-right: solid black 1.5px;
-        padding-right: 25px;
-    }   
-    .segundaSeccion__p1 {
-        position: absolute;
-        left: 33%;
-        top: 40px;
-        font-size: 15px;
-    }
-    .segundaSeccion__p2 {
-        position: absolute;
-        right: 14%;
-        top: 40px;
-        font-size: 15px;
-    }
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr, 1fr; 
+     .segundaSeccion__div1 {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         grid-row-start: 1;
+         grid-row-end: 2;
+         grid-column-start: 1;
+         grid-column-end: 2;
+         .segundaSeccion__imagen1 {
+            border-right: solid black 1.5px;
+            padding-right: 25px;   
+            margin-right: 20px;
+         }
+         .segundaSeccion__p1 {
+             margin-bottom: 10px;
+         }      
+     }
+     .segundaSeccion__div2 {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         grid-row-start: 1;
+         grid-row-end: 2;
+         grid-column-start: 2;
+         grid-column-end: 3;
+         .segundaSeccion__imagen2 {
+            border-right: solid black 1.5px;
+            padding-right: 25px;
+            margin-right: 20px;
+         }
+         .segundaSeccion__p2 {
+            margin-bottom: 10px;
+        }  
+     }
+
 }
 //MEDIA QUERIES//
 @media screen and (max-width: 768px){ 
       .segundaSeccion {
           p {
-              font-size: 12px;
-          }
-          .segundaSeccion__p1{
-              left: 17%;
-          }
-          .segundaSeccion__p2 {
-            right: 5%;
-          }
-          .segundaSeccion__imagen1 .segundaSeccion__imagen2 {
-              width: 60px;
-              height: 30px;
-          }
-          .segundaSeccion__imagen1 {
-              left: 5%;
-          }
-          .segundaSeccion__imagen2 {
-              right: 41%;
+              font-size: 15px;
           }
       }
 }
+@media screen and (max-width: 480px) {
+    .segundaSeccion {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+         .segundaSeccion__div1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            margin-right: 54px;
+           
+            .segundaSeccion__imagen1 {
+                width: 70px;
+                height: 40px;
+            }
+         }
+         .segundaSeccion__div2 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            margin: auto;
+           
+            .segundaSeccion__imagen2 {
+                width: 70px;
+                height: 40px;
+            }
+         }
+             
+    }
+}
+
+
+
+
 // TERCERA SECCION INDEX //
 
 .terceraSeccion {
@@ -311,27 +356,80 @@
 //MEDIA QUERIES//
 @media screen and (max-width: 768px){ 
     .terceraSeccion { 
+        height: 800px;
         .terceraSeccion__container {
-            display: grid;
-            grid-template-rows: 1 fr, 1 fr;
+            margin: auto;
+            margin: 40px 20px;
             .terceraSeccion__p {
-                width: 100%;
+                width: 350px;
             h3 {
                 font-size: 24px;
+                margin-top: 0px;
             }
             p {
                 font-size: 14px;
             }
+            .pp {
+              display: none;   
             }
+         }
             .container-img-terceraSeccion {
                 grid-row-start: 3;
                 img {
-                width: 70%;
                 margin-top: 50px;
                 height: 500px;
                 }
                 
-            }
-        }
+            }  
+        }    
+        
     } 
 } 
+@media screen and (max-width: 480px) {
+    .terceraSeccion {
+        height: 750px;
+        .terceraSeccion__container {
+            position: relative;
+            margin: auto auto;
+            height: 650px;
+            .terceraSeccion__p {
+                width: 95%;
+                h3 {
+                    font-weight: 500;
+                }
+                p{
+                    font-weight: 600;
+                }
+                    .boton-teEsperamos {
+                        border-radius: 5%;
+                        margin-top: 100px;
+                        padding: 10px 15px;
+                        width: 200px;
+                        background-color: $grisaseo;
+                        color: $negro;
+                        border: solid 2px $negro;
+                        font-size: 15px;
+                        font-weight: bold;
+                         &:hover {
+                            color: $grisaseo;
+                            background-color: $negro;
+                            border-color: $negro;
+                         }
+                    }
+
+                }
+            
+            }
+            .container-img-terceraSeccion {
+                position: absolute;
+                opacity: 0.5;
+                /*margin-bottom: 10px;*/
+                img {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+
+
