@@ -84,20 +84,29 @@
 
 @media screen and (max-width: 480px){
     .fondo {
+        height: 600px;
         h1 {
             display: none;
         }
         a {
             margin: auto auto;
+            display: block;
+
 
         }
         .fondo__redes {
-             display: block;
+             display: inline;
+             width: 60px;
+            
             a {
             display: flex;
             flex-direction: column;
             justify-content: right;
             align-items: flex-end;
+            &:hover {
+                color: $negro;
+                background-color: gray;
+            }
             img{
                 margin: 20px;
             }
@@ -111,4 +120,24 @@
         }
     }
 }
-    
+
+@media screen and (max-width: 375px) {
+ .fondo {
+     .fondo__redes {
+        /*height: 700px;
+        width: 100px;*/
+         a {
+            
+           align-items: flex-start;
+           
+         }
+         
+     }
+     .fondo__menu {
+         .logo {
+             margin-left: 40px;
+         }
+     }
+  }
+
+}  

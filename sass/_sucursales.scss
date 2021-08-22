@@ -16,3 +16,90 @@
         font-family: $texto;
     }
 }
+@media screen and (max-width: 768px) {
+    .contenedorCarousel {
+        .contenedorCarousel2 {
+            .contenedorCarousel3 {
+               .titulo-sucursales {
+                   display: inline-block !important;
+                   display: flex !important;
+                   flex-direction: column !important;
+                   justify-content: center !important;
+                   align-items: center !important;
+                   .titulo-puertomadero {
+                       width: 300px;
+                   }
+                   
+                   h5 {
+                    margin: 0;
+                    font-size: 32px;
+                    width: 200px;
+                   }
+                   p {
+                       margin: 0;
+                       font-size: 18px;
+                       width: 150px;
+                   }
+               }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .contenedorCarousel {
+        .contenedorCarousel2 {
+            .contenedorCarousel3 {
+               .titulo-sucursales {
+                   display: inline-block !important;
+                   display: flex !important;
+                   flex-direction: column !important;
+                   justify-content: center !important;
+                   align-items: center !important;
+                   .titulo-puertomadero {
+                       width: 200px;
+                   }
+                   
+                   h5 {
+                    margin: 0;
+                    font-size: 28px;
+                    width: 150px;
+                   }
+                   p {
+                       margin: 0;
+                       font-size: 14px;
+                       width: 100px;
+                   }
+               }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .contenedorCarousel {
+        .contenedorCarousel2 {
+            .contenedorCarousel3 {
+               .titulo-sucursales {
+                   display: inline-block !important;
+                   display: flex !important;
+                   flex-direction: column !important;
+                   justify-content: center !important;
+                   align-items: center !important;
+                   .titulo-puertomadero {
+                       width: 150px;
+                   }
+                   
+                   h5 {
+                    margin: 0;
+                    font-size: 24px;
+                    width: 100px;
+                   }
+                   p {
+                       margin: 0;
+                       font-size: 10px;
+                       width: 80px;
+                   }
+               }
+            }
+        }
+    }
+}

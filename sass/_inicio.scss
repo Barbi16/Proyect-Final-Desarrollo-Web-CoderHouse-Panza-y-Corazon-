@@ -104,6 +104,12 @@
         }
     }
 }
+@media screen and (max-width: 375px) {
+    .primeraSeccion {
+        height: 900px;
+    }
+   
+}
 
 // GALERIA INDEX // 
 
@@ -332,17 +338,19 @@
         letter-spacing: 2px;
         word-spacing: 5px;
     }
-    .pp{
+    a {
+        .boton-teEsperamos { 
        border: solid 1px #262526;
-       border-radius: 20px;
+       border-radius: 5px;
        width: 300px;
        margin:auto;
-       padding-bottom: 10px;
-       font-family: 'IM Fell Double Pica', serif;
+       padding: 10px;
+       font-family: $texto;
        letter-spacing: 5px;
        background-color: $negro;
        color: $grisaseo;
        margin-top: 60px;
+      }
     }
     .container-img-terceraSeccion{
         img{
@@ -423,13 +431,42 @@
             .container-img-terceraSeccion {
                 position: absolute;
                 opacity: 0.5;
-                /*margin-bottom: 10px;*/
                 img {
                     padding: 0px;
                 }
             }
         }
     }
+@media screen and (max-width: 375px) {
+   .terceraSeccion {
+       background-image: none;
+       background-color: $marronOscuro;
+       .terceraSeccion__container {
+           .container-img-terceraSeccion {
 
+               img {
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../imagenes/fondo-menuejecutivo.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    opacity: 0.6;
+                }
+               }
+           }
+           .terceraSeccion__p {
+               a {
+                   .boton-teEsperamos {
+                       margin: 0px;
+                   }
+               }
+           }
+       }
+   }
+}
 
 

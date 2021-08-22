@@ -117,3 +117,49 @@
          }
      }
 }
+@media screen and (max-width: 480px) {
+     .fondoMenu {
+         .menuContainer {
+             .menuContainer__divs {
+                   margin-left: 20px;
+                   padding: 0;
+                   .img-p {
+                       figure {
+                           figcaption {
+                               
+                               padding: 0;
+                           }
+                       }
+                   }
+             }
+         }
+     }
+}
+@media screen and (max-width: 375px) {
+    .fondoMenu {
+        height: 1700px;
+        padding: 20px 10px;
+        .menuContainer {
+            height: 1600px;
+            margin: auto auto;
+            width: 330px;
+            .menuContainer__divs {
+                width: 300px;
+                .diaSemana {
+                    margin-bottom: 400px;
+                    width: 200px;
+                   margin: 30px auto;
+                   text-align: center;
+                    padding: 0;
+                }
+               .img-p {
+                   flex-direction: column;
+                   p {
+                       width: 300px;
+                       text-align: center;
+                   }
+               }
+            }
+        }
+    }
+}

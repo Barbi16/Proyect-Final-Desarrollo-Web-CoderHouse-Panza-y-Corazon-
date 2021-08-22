@@ -17,50 +17,61 @@
     <title>Panza & Corazón- Reservas</title>
 </head>
 <body>
-	<header class="fondo">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo__menu">
-			<div class="logo">
-				<a href="./index.html"> <img src="./imagenes/logo.png" width="300px" height="50px" alt=""> </a>
-			   </div>
-			<div class="container-fluid display">
-				<a class="navbar-brand" href="#"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-				  <ul class="navbar-nav menunav">
-					<li class="nav-item">
-					  <a class="nav-link link" aria-current="page" href="./index.html#Nosotros">Nosotros</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link link" href="./index.html#Galeria">Galeria</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link link" href="./sucursales.html">Sucursales</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link link" href="./menu-ejecutivo.html">Menu Ejecutivo</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link active link" href="./reservas.html">Reservas</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link link" href="./contacto.html">Contacto</a>
-					</li>
-				  </ul>
-				</div>
-			  </div>
-			</nav>
-	   <h1>
-		   Panza & Corazón
-	   </h1>  
-	   <a href="reservas.html#Reservas"><button class="boton-reservar">RESERVA TU LUGAR</button></a>           
-	</header>
+    <header class="fondo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo__menu">
+            <div class="logo">   
+             <a href="./index.html"> <img src="./imagenes/logo.png" width="300px" height="50px" alt=""> </a>
+            </div>
+            <div class="container-fluid display">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav menunav">
+                    <li class="nav-item">
+                      <a class="nav-link active link" aria-current="page" href="index.html#Nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="index.html#Galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="./sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="./menu-ejecutivo.html">Menu Ejecutivo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="./reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+       <h1>
+           Panza & Corazón
+       </h1>  
+       <div class="fondo__redes bg-dark">
+        <a href=" " >
+          <img class="img-footer" src="./imagenes/logo-facebook-24px.png" alt="icono de twitter">
+        </a>
+        <a href="">
+          <img src="./imagenes/logo-instagram-24px.png" alt="icono de pinstragram">
+        </a>
+        <a href=""> 
+          <img src="./imagenes/logo-twitter-24px.png" alt="icono de facebook">
+         </a>
+        </div>
+       <a href="reservas.html#Reservas"><button class="boton-reservar">RESERVA TU LUGAR</button></a>       
+ </header> 
   <main>
         <section id="Reservas" class="contenedorReservas">
 			<div class="container border border-light bg-light div-contenedorReservas">
 				<h3 class="titulo-reservas">Reservas</h3>
-             	<form action="" >
+             	<form class="formulario_reservas" action="" >
 					<div class="mb-3">
 						<label for="exampleInputEmail1" class="form-label">Correo electronico</label>
 						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="alguien@alguien.com">
@@ -115,22 +126,21 @@
 							</label>
 						  </div>
 						  </fieldset>
-					<div class="mb-3">
+					<div class="mb-3 form_tipodeEvento">
 						<select  class="form-select" aria-label="Default select example" name="Tipo-de-evento" name="Tipo-de-evento" id="Tipo-de-evento">
 							<option selected>Tipo de Evento</option>
 							<option value="Cumpleaños">Cumpleaños</option>
 							<option value="Aniversario">Aniversario</option>
 							<option value="Otros">Otros</option>
 						</select> 
-					</div>
-					
-					<div class="input-group reserv-ttarea"  >
+					</div>					
+					<div class="input-group reserv-ttarea form_comentario"  >
 						<span class="input-group-text">Deja un comentario</span>
 						<textarea class="form-control" aria-label="With textarea"></textarea>
 					</div>
 					<div class="reserv-bottom d-inline-flex mb-3 botones-reserva">
-						<input type="submit"  class="btn btn-warning w-25  d-inline-block m-auto botones-reserva1" value="Enviar formulario">
-						<input type="reset" class="btn btn-secondary w-25  d-inline-block m-auto botones-reserva2" value="Limpiar formulario">   
+						<input type="submit"  class="btn btn-warning w-25  d-inline-block m-auto botones-reserva1" value="Enviar">
+						<input type="reset" class="btn btn-secondary w-25  d-inline-block m-auto botones-reserva2" value="Limpiar">   
 					</div>
 				</form>
 			</div>

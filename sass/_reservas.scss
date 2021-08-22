@@ -14,12 +14,63 @@
        }
        .botones-reserva{
            margin: 30px;
-           .botones-reserva1 {
-               background-color: $beige;
+           padding: 10px 2px;
+           .botones-reserva1 {             
+               border: none;
            }
            .botones-reserva2 {
-               background-color: $marronClaro;
+               color: black;
+               border: none;
            }
        }
     }
+}
+// MEDIA QUERIES //
+
+@media screen and (max-width: 768px) {
+    .contenedorReservas {
+        .div-contenedorReservas { 
+           .titulo-reservas{
+              margin-left: 200px;
+           }  
+        } 
+    }    
+}
+@media screen and (max-width: 480px) {
+    .contenedorReservas {
+        .div-contenedorReservas { 
+           .titulo-reservas{
+              margin-left: 100px;
+           } 
+           .formulario_reservas {
+               .form_tipodeEvento {
+                   margin-top: 20px;
+               }
+           } 
+           .form_comentario {
+               span {
+                   width: 100%;
+               }
+           }
+           .botones-reserva {
+               margin-left: 3px;
+           }
+        } 
+    } 
+}
+@media screen and (max-width: 375px) {
+    .contenedorReservas {
+        .div-contenedorReservas { 
+           .titulo-reservas{
+              margin-left: 70px;
+           } 
+           .formulario_reservas{
+            .botones-reserva {
+                .botones-reserva2 {
+                   width: 70px !important;
+                }
+            }
+          }
+        } 
+    } 
 }

@@ -128,14 +128,19 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+  .fondo {
+    height: 600px;
+  }
   .fondo h1 {
     display: none;
   }
   .fondo a {
     margin: auto auto;
+    display: block;
   }
   .fondo .fondo__redes {
-    display: block;
+    display: inline;
+    width: 60px;
   }
   .fondo .fondo__redes a {
     display: -webkit-box;
@@ -152,11 +157,30 @@ html {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  .fondo .fondo__redes a:hover {
+    color: #262526;
+    background-color: gray;
+  }
   .fondo .fondo__redes a img {
     margin: 20px;
   }
   .fondo .fondo__menu .logo {
     margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fondo .fondo__redes {
+    /*height: 700px;
+        width: 100px;*/
+  }
+  .fondo .fondo__redes a {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .fondo .fondo__menu .logo {
+    margin-left: 40px;
   }
 }
 
@@ -332,6 +356,12 @@ footer .footer__conteiner img {
   }
   .primeraSeccion .primeraSeccion__contenedor .container-img img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .primeraSeccion {
+    height: 900px;
   }
 }
 
@@ -618,13 +648,13 @@ footer .footer__conteiner img {
   word-spacing: 5px;
 }
 
-.terceraSeccion .pp {
+.terceraSeccion a .boton-teEsperamos {
   border: solid 1px #262526;
-  border-radius: 20px;
+  border-radius: 5px;
   width: 300px;
   margin: auto;
-  padding-bottom: 10px;
-  font-family: 'IM Fell Double Pica', serif;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 5px;
   background-color: #262526;
   color: #F2F1F0;
@@ -703,10 +733,30 @@ footer .footer__conteiner img {
   .terceraSeccion .container-img-terceraSeccion {
     position: absolute;
     opacity: 0.5;
-    /*margin-bottom: 10px;*/
   }
   .terceraSeccion .container-img-terceraSeccion img {
     padding: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .terceraSeccion {
+    background-image: none;
+    background-color: #734D3F;
+  }
+  .terceraSeccion .terceraSeccion__container .container-img-terceraSeccion img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagenes/fondo-menuejecutivo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+  }
+  .terceraSeccion .terceraSeccion__container .terceraSeccion__p a .boton-teEsperamos {
+    margin: 0px;
   }
 }
 
@@ -845,6 +895,48 @@ footer .footer__conteiner img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .fondoMenu .menuContainer .menuContainer__divs {
+    margin-left: 20px;
+    padding: 0;
+  }
+  .fondoMenu .menuContainer .menuContainer__divs .img-p figure figcaption {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fondoMenu {
+    height: 1700px;
+    padding: 20px 10px;
+  }
+  .fondoMenu .menuContainer {
+    height: 1600px;
+    margin: auto auto;
+    width: 330px;
+  }
+  .fondoMenu .menuContainer .menuContainer__divs {
+    width: 300px;
+  }
+  .fondoMenu .menuContainer .menuContainer__divs .diaSemana {
+    margin-bottom: 400px;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0;
+  }
+  .fondoMenu .menuContainer .menuContainer__divs .img-p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fondoMenu .menuContainer .menuContainer__divs .img-p p {
+    width: 300px;
+    text-align: center;
+  }
+}
+
 .titulo-sucursales h5 {
   background-color: rgba(134, 125, 125, 0.8);
   width: 300px;
@@ -862,6 +954,102 @@ footer .footer__conteiner img {
   width: 150px;
   margin-left: 400px;
   font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales {
+    display: inline-block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales .titulo-puertomadero {
+    width: 300px;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales h5 {
+    margin: 0;
+    font-size: 32px;
+    width: 200px;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales p {
+    margin: 0;
+    font-size: 18px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales {
+    display: inline-block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales .titulo-puertomadero {
+    width: 200px;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales h5 {
+    margin: 0;
+    font-size: 28px;
+    width: 150px;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales p {
+    margin: 0;
+    font-size: 14px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales {
+    display: inline-block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales .titulo-puertomadero {
+    width: 150px;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales h5 {
+    margin: 0;
+    font-size: 24px;
+    width: 100px;
+  }
+  .contenedorCarousel .contenedorCarousel2 .contenedorCarousel3 .titulo-sucursales p {
+    margin: 0;
+    font-size: 10px;
+    width: 80px;
+  }
 }
 
 .contenedorReservas {
@@ -891,14 +1079,46 @@ footer .footer__conteiner img {
 
 .contenedorReservas .div-contenedorReservas .botones-reserva {
   margin: 30px;
+  padding: 10px 2px;
 }
 
 .contenedorReservas .div-contenedorReservas .botones-reserva .botones-reserva1 {
-  background-color: #302314;
+  border: none;
 }
 
 .contenedorReservas .div-contenedorReservas .botones-reserva .botones-reserva2 {
-  background-color: #A67458;
+  color: black;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorReservas .div-contenedorReservas .titulo-reservas {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenedorReservas .div-contenedorReservas .titulo-reservas {
+    margin-left: 100px;
+  }
+  .contenedorReservas .div-contenedorReservas .formulario_reservas .form_tipodeEvento {
+    margin-top: 20px;
+  }
+  .contenedorReservas .div-contenedorReservas .form_comentario span {
+    width: 100%;
+  }
+  .contenedorReservas .div-contenedorReservas .botones-reserva {
+    margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contenedorReservas .div-contenedorReservas .titulo-reservas {
+    margin-left: 70px;
+  }
+  .contenedorReservas .div-contenedorReservas .formulario_reservas .botones-reserva .botones-reserva2 {
+    width: 70px !important;
+  }
 }
 
 main .contenedorContacto1 {
@@ -1096,7 +1316,7 @@ main .contenedorContacto3 .texto2-contacto p {
 }
 
 main .contenedorFormulario {
-  background-color: #302314;
+  background-color: #F2CA99;
   height: 650px;
   padding-top: 30px;
   display: -ms-grid;
@@ -1151,5 +1371,241 @@ main .contenedorFormulario .contenedorFormulario-texto h3, main .contenedorFormu
   margin: 30px;
   font-size: 40px;
   letter-spacing: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  main .contenedorContacto1 {
+    height: 600px;
+  }
+  main .contenedorContacto1 .texto-contacto .p2-contacto {
+    font-size: 28px;
+  }
+  main .contenedorContacto1 .texto-contacto .p1-contacto {
+    font-size: 18px;
+  }
+  main .contenedorContacto2 .imagen1-contacto {
+    height: 350px;
+    width: 350px;
+  }
+  main .contenedorContacto2 .texto1-contacto p {
+    margin-right: 20px;
+  }
+  main .contenedorContacto3 {
+    height: 350px;
+  }
+  main .contenedorContacto3 .imagen2-contacto {
+    width: 350px;
+  }
+  main .contenedorContacto3 .texto2-contacto {
+    margin: 0;
+  }
+  main .contenedorContacto3 .texto2-contacto p {
+    margin-left: 20px;
+    padding-top: 0px;
+  }
+  main .contenedorContacto3 .texto2-contacto h3 {
+    margin: auto;
+  }
+  main .contenedorFormulario .formulario {
+    width: 350px;
+    margin-left: 30px;
+  }
+  main .contenedorFormulario .contenedorFormulario-texto {
+    width: 300px;
+  }
+  main .contenedorFormulario .contenedorFormulario-texto h3, main .contenedorFormulario .contenedorFormulario-texto h4 {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main .contenedorContacto1 {
+    height: 400px;
+  }
+  main .contenedorContacto1 .texto-contacto .p2-contacto {
+    font-size: 20px;
+  }
+  main .contenedorContacto1 .texto-contacto .p1-contacto {
+    font-size: 16px;
+    margin: 15px 10px;
+  }
+  main .contenedorContacto1 .texto-contacto a .button-contacto {
+    font-size: 14px;
+  }
+  main .contenedorContacto2 {
+    height: 600px;
+        grid-template-areas: "texto1-contacto" "imagen1-contacto";
+  }
+  main .contenedorContacto2 .imagen1-contacto {
+    width: 100%;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  main .contenedorContacto2 .texto1-contacto {
+    height: 300px;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .contenedorContacto2 .texto1-contacto p {
+    margin: 20px;
+    width: 100%;
+  }
+  main .contenedorContacto3 .imagen2-contacto {
+    background-image: none;
+    display: none;
+  }
+  main .contenedorContacto3 .texto2-contacto {
+    width: 100%;
+    height: 300px;
+  }
+  main .contenedorContacto3 .texto2-contacto p {
+    margin-left: 20px;
+    padding-top: 0px;
+  }
+  main .contenedorContacto3 .texto2-contacto h3 {
+    margin: auto;
+  }
+  main .contenedorFormulario {
+    height: 900px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    display: -ms-grid;
+    display: grid;
+  }
+  main .contenedorFormulario .contenedorFormulario-texto {
+    height: 200px;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0;
+  }
+  main .contenedorFormulario .contenedorFormulario-texto h3 {
+    margin: 0px 50px !important;
+  }
+  main .contenedorFormulario .formulario {
+    margin-bottom: 100px;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    width: 350px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main .contenedorContacto1 {
+    height: 600px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  main .contenedorContacto1 .vino-contacto {
+    background-image: url("/imagenes/contacto-hamburguesa.jpg");
+    background-position: center;
+    background-size: cover;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    height: 200px;
+  }
+  main .contenedorContacto1 .bife-contacto {
+    background-image: url("../imagenes/contacto-bife.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 200px;
+  }
+  main .contenedorContacto1 .cupcake-contacto {
+    background-image: url("../imagenes/contacto-cupcakes.jpg");
+    background-position: center;
+    background-size: cover;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    height: 200px;
+  }
+  main .contenedorContacto1 .canapes-contacto {
+    background-image: url("../imagenes/contacto-canapes.jpg");
+    background-position: center;
+    background-size: cover;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    height: 200px;
+  }
+  main .contenedorContacto1 .texto-contacto {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  main .contenedorContacto2 {
+    height: 750px;
+  }
+  main .contenedorContacto2 .texto1-contacto {
+    height: 400px;
+  }
+  main .contenedorContacto2 .texto1-contacto p {
+    padding-right: 30px;
+  }
+  main .contenedorContacto3 {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "texto2-contacto" "imagen2-contacto";
+    -ms-grid-rows: 300px, 300px !important;
+        grid-template-rows: 300px, 300px !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 550px;
+  }
+  main .contenedorContacto3 .imagen2-contacto {
+    width: 100%;
+    display: inline-block;
+    background-image: url("../imagenes/contacto-restaurante3.jpg");
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    height: 300px;
+  }
+  main .contenedorContacto3 .texto2-contacto {
+    padding-left: 30px;
+    height: 250px;
+  }
+  main .contenedorFormulario .formulario {
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 300px;
+    padding-bottom: 50px;
+  }
+  main .contenedorFormulario .formulario .boton-formulario {
+    margin-top: 0px;
+  }
+  main .contenedorFormulario .contenedorFormulario-texto h3, main .contenedorFormulario .contenedorFormulario-texto h4 {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
